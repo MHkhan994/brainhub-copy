@@ -28,6 +28,10 @@ html {
   background-color: var(--color-dark);
 }
 
+.bg-lightblue{
+  background-color: var(--color-lightblue);
+}
+
 .my-container{
   @apply lg:w-[93%] mx-auto
 }
@@ -48,6 +52,19 @@ html {
 .btn-pri:hover{
   background-color: #272c38;
 }
+
+.btn-sec{
+  @apply uppercase text-black font-bold flex items-center justify-center gap-2;
+  background-color: var(--color-lightblue);
+  padding: 14px 32px;
+  font-size: 16px;
+  transition: all ease-in-out .3s;
+}
+
+.btn-sec:hover{
+  background-color: #40c2b1;
+}
+
 
 
 /* =============navbar============== */
@@ -70,4 +87,12 @@ html {
 .nav-list:hover .dropdown{
   opacity: 1;
   visibility: visible;
+}
+
+
+
+
+/* ================banner============ */
+.banner-img{
+  transition: all linear .2s;
 }
