@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Mona Sans';
+  src:
+    url('Mona-Sans.woff2') format('woff2 supports variations'),
+    url('Mona-Sans.woff2') format('woff2-variations');
+}
+
+:root{
+  --color-dark: #0f1115;
+  --color-lightblue: #49FFE6;
+}
+
+html {
+  font-family: 'Mona Sans';
+}
+
+.font-ibm{
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.bg-dark{
+  background-color: var(--color-dark);
+}
+
+.my-container{
+  @apply lg:w-[93%] mx-auto
+}
+
+.font-mona{
+  font-family: 'Mona Sans';
+}
+
+
+.btn-pri{
+  @apply uppercase text-white flex items-center justify-center gap-2;
+  background-color: #171A21;
+  padding: 14px 32px;
+  font-size: 15px;
+  transition: all ease-in-out .3s;
+}
+
+.btn-pri:hover{
+  background-color: #272c38;
+}
+
+
+/* =============navbar============== */
+.nav-arrow{
+  transition: transform ease-in-out .2s;
+}
+
+.nav-list:hover .nav-arrow{
+  transform: rotate(180deg);
+  color: var(--color-lightblue);
+}
+
+.dropdown{
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .5s, visibility .5s;
+  cursor: pointer;
+}
+
+.nav-list:hover .dropdown{
+  opacity: 1;
+  visibility: visible;
+}

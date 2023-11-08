@@ -1,0 +1,73 @@
+[
+    {
+        "id": 1,
+        "name": "services",
+        "dropTitle": "Accelerate your software development process.",
+        "routes": [
+            "web development",
+            "mobile app development",
+            "desktop app development",
+            "cloud engineering and devOps",
+            "digital product development",
+            "UI/UX design",
+            "generative ai development"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "technologies",
+        "dropTitle": "Choose a tech stack that serves you well today and when you grow 10x.",
+        "routes": [
+            "typescript",
+            ".net",
+            "node.js",
+            "react",
+            "react native",
+            "electron",
+            "aws"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "industries",
+        "dropTitle": "Draw on our experience from building industry- specific solutions.",
+        "routes": [
+            "banking",
+            "accounting & tax",
+            "fintech",
+            "insurance",
+            "regtech",
+            "biotech"
+        ]
+    },
+    {
+        "id": 4,
+        "name": "portfolio",
+        "dropTitle": "4.9 / 5 rating on Clutch from 41 reviews.",
+        "routes": [
+            "case studies",
+            "how we work"
+        ]
+    },
+    {
+        "id": 5,
+        "name": "insights",
+        "dropTitle": "Engineering and tech leadership insights from practitioners.",
+        "routes": [
+            "blog and tech guides",
+            "better tech leadership podcast",
+            "3x3 newsletter"
+        ]
+    },
+    {
+        "id": 6,
+        "name": "about",
+        "dropTitle": "Learn more about Brainhub.",
+        "routes": [
+            "about",
+            "top 1.36% talent",
+            "careers",
+            "contact"
+        ]
+    }
+]
