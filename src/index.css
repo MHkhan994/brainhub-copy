@@ -37,7 +37,7 @@ html {
 }
 
 .my-container{
-  @apply lg:w-[93vw] md:w-[92vw] w-[90vw] mx-auto
+  @apply lg:w-[93vw] md:w-[92vw] w-[90vw] mx-auto max-w-[1960px]
 }
 
 .font-mona{
@@ -116,9 +116,10 @@ html {
     filter: blur(20px); 
 }
 
-@media screen and (max-width:676px) {
+
+@media screen and (max-width:900px) {
   .companies{
-    border-radius: 50% 50% 0 0 / 20% 20% 0 0;
+    border-radius: 50% 50% 0 0 / 25% 25% 0 0;
   }
   
   .companies-overlay{
@@ -128,9 +129,9 @@ html {
   }
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:676px) {
   .companies{
-    border-radius: 50% 50% 0 0 / 25% 25% 0 0;
+    border-radius: 50% 50% 0 0 / 20% 20% 0 0;
   }
   
   .companies-overlay{

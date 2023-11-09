@@ -9,7 +9,7 @@ const Companies = () => {
     const companyImg = [company1, company2, company3, company4, company5]
 
     return (
-        <div className="grid justify-center overflow-x-hidden">
+        <div className="grid justify-center overflow-x-hidden max-h-[900px]">
             <div className="min-h-screen md:min-h-[60vh] flex flex-col justify-between companies w-[140vw] me-auto bg-dark z-40 text-white">
                 <div className="my-container pt-24 md:pt-28 lg:pt-40">
                     <h1 className="text-center text-base">Brainhub is a software engineering agency trusted by 80+ US & European startups, scale-ups & enterprises.</h1>

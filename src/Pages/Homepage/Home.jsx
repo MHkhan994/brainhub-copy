@@ -5,6 +5,9 @@ import Companies from "./companies";
 import Projects from "./Projects";
 import MobileNav from "../Shared/MobileNav";
 
+import 'aos/dist/aos.css'
+import Aos from "aos";
+
 const Home = () => {
 
     const [scrollY, setScrollY] = useState(0)
@@ -20,6 +23,14 @@ const Home = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
+    useEffect(() => {
+        Aos.init({
+            duration: 1000,
+            delay: 50,
+            once: true
+        })
+    }, [])
 
     return (
         <div className="bg-dark relative overflow-hidden">
