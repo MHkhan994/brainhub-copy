@@ -8,7 +8,7 @@ const Navbar = () => {
     console.log(routes);
 
     return (
-        <div className='fixed top-0 left-0 w-full bg-dark z-40'>
+        <div className='fixed top-0 left-0 w-full bg-dark z-50'>
             <div className="my-container h-[80px] py-1 flex justify-between items-center uppercase font-ibm text-white">
                 <div className='flex gap-16 items-center'>
                     <img src="/logo.svg" className="h-[15px]" alt="" />

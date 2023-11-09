@@ -1,12 +1,33 @@
+import { useEffect, useState } from "react";
 import Navbar from "../Shared/Navbar";
 import Banner from "./Banner";
+import Companies from "./companies";
 
 const Home = () => {
+
+    const [scrollY, setScrollY] = useState(0)
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrollY(window.scrollY);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
-        <div className="min-h-screen bg-dark h-[300vh]">
-            <Navbar></Navbar>
-            <Banner></Banner>
-            <div className="h-screen z-40 w-full bg-white"></div>
+        <div className="bg-dark relative">
+            <Navbar />
+            <div className="fixed w-full top-0 z-10">
+                <Banner scrollY={scrollY} />
+            </div>
+            <div className="z-40 relative mt-[100vh] w-full">
+                <Companies></Companies>
+            </div>
         </div>
     );
 };

@@ -96,3 +96,12 @@ html {
 .banner-img{
   transition: all linear .2s;
 }
+
+.banner-img{
+  transform: translateY(0px);
+}
+
+/* ===========companies========= */
+.companies{
+  border-radius: 50% 50% 0 0 / 30% 30% 0 0;
+}
