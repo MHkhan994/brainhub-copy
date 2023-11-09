@@ -20,12 +20,12 @@ const Home = () => {
     }, []);
 
     return (
-        <div className="bg-dark relative">
+        <div className="bg-dark relative overflow-hidden">
             <Navbar />
             <div className="fixed w-full top-0 z-10">
                 <Banner scrollY={scrollY} />
             </div>
-            <div className="z-40 relative mt-[100vh] w-full">
+            <div className="z-40 relative mt-[110vh] w-full">
                 <Companies></Companies>
             </div>
         </div>
