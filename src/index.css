@@ -37,7 +37,7 @@ html {
 }
 
 .my-container{
-  @apply lg:w-[93vw] md:w-[90vw] w-[90vw] mx-auto
+  @apply lg:w-[93vw] md:w-[92vw] w-[90vw] mx-auto
 }
 
 .font-mona{
