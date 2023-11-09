@@ -28,18 +28,21 @@ const Banner = ({ scrollY }) => {
 
 
     return (
-        <div className={`relative w-full ${scrollY > 700 ? 'invisible hidden' : ''}`}>
+        <div className={`relative w-full ${scrollY > 700 ? 'lg:invisible lg:hidden' : ''} pb-10`}>
             <div className={`w-full overflow-hidden bg-dark`} style={{ opacity: 1 - scrollY / 500 }}>
-                <div ref={bannerRef} className="flex w-full flex-col items-center my-container pt-44 text-white" onMouseMove={handleMouseMove}>
-                    <h1 className="text-[56px] font-medium text-center leading-[1.3]">
+                <div ref={bannerRef} className={`transition-all flex w-full flex-col items-center my-container text-white ${scrollY > 80 ? 'pt-24' : 'pt-44'}`} onMouseMove={handleMouseMove}>
+                    <h1 className="text-[56px] lg:block hidden font-medium text-center leading-[1.3]">
                         High-performing teams of <br />  <span className="text-[#49FFE6]">vetted software engineers.</span>
                     </h1>
-                    <div className='w-[440px] h-[65px] relative border-[6px] border-white mt-6'>
-                        <div className='w-[95%] left-[11px] h-20 z-30 bg-dark absolute -top-4 flex px-2 justify-between'>
+                    <h1 className="text-4xl block lg:hidden font-medium text-center leading-[1.3]">
+                        High-performing teams <br /> of <span className="text-[#49FFE6]">vetted software engineers.</span>
+                    </h1>
+                    <div className='lg:w-[440px] w-[270px] lg:h-[65px] h-[40px] relative lg:border-[6px] border-4 border-white mt-6'>
+                        <div className='w-[95%] left-[11px] lg:h-20 h-12 z-30 bg-dark absolute lg:-top-4 -top-3 flex px-2 justify-between'>
                             {
-                                avatarImgs.map(img => <span key={img} className='flex items-end'>
-                                    <img src={img} className='h-20'></img>
-                                    <BiSolidQuoteSingleRight className='text-3xl'></BiSolidQuoteSingleRight>
+                                avatarImgs.map((img, i) => <span key={img} className='flex items-end'>
+                                    <img src={img} className='lg:h-20 h-10'></img>
+                                    {i < 3 && <BiSolidQuoteSingleRight className='lg:text-3xl text-xl'></BiSolidQuoteSingleRight>}
                                 </span>)
                             }
                         </div>
@@ -65,7 +68,7 @@ const Banner = ({ scrollY }) => {
                         </>
                     </div>
                     {/* ===============animated photos=========== */}
-                    <div className='overflow-hidden h-full'>
+                    <div className='overflow-hidden h-full lg:block hidden'>
                         <img style={{
                             top: `${130 - cursorY}px`,
                             left: `${100 - cursorX}px`,

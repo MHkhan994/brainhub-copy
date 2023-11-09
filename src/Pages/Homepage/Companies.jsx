@@ -10,16 +10,16 @@ const Companies = () => {
 
     return (
         <div className="grid justify-center overflow-x-hidden">
-            <div className="h-screen flex flex-col justify-between companies w-[140vw] me-auto bg-dark z-40 text-white">
+            <div className="min-h-screen flex flex-col justify-between companies w-[140vw] me-auto bg-dark z-40 text-white">
                 <div className="my-container pt-40">
                     <h1 className="text-center text-base">Brainhub is a software engineering agency trusted by 80+ US & European startups, scale-ups & enterprises.</h1>
-                    <div className='flex lg:w-10/12 mx-auto justify-between pt-6'>
+                    <div className='flex lg:w-10/12 mx-auto justify-between items-center flex-col lg:flex-row pt-6'>
                         {
-                            companyImg.map(img => <img className='h-20' key={img} src={img}></img>)
+                            companyImg.map(img => <img className='h-20 w-fit' key={img} src={img}></img>)
                         }
                     </div>
                 </div>
-                <div className='my-container text-center lg:w-[30%] space-y-8'>
+                <div className='my-container text-center lg:w-[30%] space-y-8 pt-12'>
                     <h4 className='text-lightblue text-sm font-ibm'>[ WHY TECH COMPANIES CHOOSE BRAINHUB IN 2023 ]</h4>
                     <h1 className='text-4xl font-medium'>“A pain-free alternative to hiring engineers in-house.”</h1>
                     <h3>Focus solely on your product vision while we provide you with a dedicated team of A-player engineers ready to build, modernize and scale your software.</h3>

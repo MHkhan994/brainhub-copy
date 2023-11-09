@@ -22,11 +22,11 @@ const Home = () => {
 
     return (
         <div className="bg-dark relative overflow-hidden">
-            <Navbar />
-            <div className="fixed w-full top-0 z-10">
+            <Navbar></Navbar>
+            <div className={`w-full z-10 lg:fixed top-0 left-0`}>
                 <Banner scrollY={scrollY} />
             </div>
-            <div className="z-40 relative mt-[110vh] w-full">
+            <div className="z-40 relative lg:mt-[110vh] w-full">
                 <Companies></Companies>
             </div>
             <Projects></Projects>

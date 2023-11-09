@@ -66,7 +66,7 @@ const Projects = () => {
                     </div>
                 </div>
             </div>
-            <div className='my-container text-white flex flex-col items-center text-center py-32 gap-10'>
+            <div className='my-container text-white flex flex-col items-center text-center lg:py-28 py-16 gap-10'>
                 <h2 className='text-lg'>We wish we could show you all the work we've done. <br />
                     Unfortunately, we're often bound by the non-disclosure agreements.</h2>
                 <button className="border-b border-gray-700 pb-2 flex items-center gap-2 uppercase font-ibm font-semibold">
