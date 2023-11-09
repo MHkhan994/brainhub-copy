@@ -37,7 +37,7 @@ html {
 }
 
 .my-container{
-  @apply lg:w-[93vw] md:w-[85vw] w-[90vw] mx-auto
+  @apply lg:w-[93vw] md:w-[90vw] w-[90vw] mx-auto
 }
 
 .font-mona{
@@ -119,6 +119,18 @@ html {
 @media screen and (max-width:676px) {
   .companies{
     border-radius: 50% 50% 0 0 / 20% 20% 0 0;
+  }
+  
+  .companies-overlay{
+    border-radius: 50% 50% 0 0 / 30% 30% 0 0;
+    background: linear-gradient(121deg, #40c2b1a6 -3.09%, #40c2b1 3.95%);
+      filter: blur(10px); 
+  }
+}
+
+@media screen and (max-width:900px) {
+  .companies{
+    border-radius: 50% 50% 0 0 / 25% 25% 0 0;
   }
   
   .companies-overlay{

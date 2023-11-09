@@ -8,9 +8,9 @@ import project4 from '../../assets/project4.webp'
 const Projects = () => {
     return (
         <div>
-            <div className="my-container text-white grid lg:grid-cols-2 justify-between pt-24">
-                <div className='cursor-pointer lg:w-[92%]'>
-                    <div className='lg:h-[90vh] lg:me-auto overflow-hidden'>
+            <div className="my-container text-white grid lg:grid-cols-2 md:grid-cols-2 justify-between pt-24">
+                <div className='cursor-pointer lg:w-[92%] md:w-[100%]'>
+                    <div className='lg:h-[90vh] md:h-[38vh] lg:me-auto overflow-hidden'>
                         <img src={project1} className='h-full w-full transition-all hover:scale-105' alt="" />
                     </div>
                     <div className='space-y-5 py-7'>
@@ -23,8 +23,8 @@ const Projects = () => {
                         </button>
                     </div>
                 </div>
-                <div className='cursor-pointer lg:w-[76%] lg:ms-auto'>
-                    <div className='lg:h-[75vh]  overflow-hidden'>
+                <div className='cursor-pointer md:w-[76%] md:ms-auto'>
+                    <div className='lg:h-[75vh] md:h-[30vh]  overflow-hidden'>
                         <img src={project2} className='h-full w-full transition-all hover:scale-105' alt="" />
                     </div>
                     <div className='space-y-5 py-7'>
@@ -37,8 +37,8 @@ const Projects = () => {
                         </button>
                     </div>
                 </div>
-                <div className='cursor-pointer lg:w-[76%] lg:me-auto lg:mt-auto'>
-                    <div className='lg:h-[75vh] overflow-hidden'>
+                <div className='cursor-pointer md:w-[76%] lg:me-auto md:mt-auto'>
+                    <div className='lg:h-[75vh] md:h-[30vh] overflow-hidden'>
                         <img src={project3} className='h-full w-full transition-all hover:scale-105' alt="" />
                     </div>
                     <div className='space-y-5 py-7'>
@@ -51,7 +51,7 @@ const Projects = () => {
                         </button>
                     </div>
                 </div>
-                <div className='cursor-pointer lg:w-[92%] lg:mt-20 lg:ms-auto'>
+                <div className='cursor-pointer lg:w-[92%] md:mt-20 lg:ms-auto'>
                     <div className='lg:h-[90vh] lg:ms-auto overflow-hidden'>
                         <img src={project4} className='h-full w-full transition-all hover:scale-105' alt="" />
                     </div>

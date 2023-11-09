@@ -3,6 +3,7 @@ import Navbar from "../Shared/Navbar";
 import Banner from "./Banner";
 import Companies from "./companies";
 import Projects from "./Projects";
+import MobileNav from "../Shared/MobileNav";
 
 const Home = () => {
 
@@ -22,7 +23,12 @@ const Home = () => {
 
     return (
         <div className="bg-dark relative overflow-hidden">
-            <Navbar></Navbar>
+            <div className="lg:block hidden">
+                <Navbar></Navbar>
+            </div>
+            <div className="block lg:hidden">
+                <MobileNav></MobileNav>
+            </div>
             <div className={`w-full z-10 lg:fixed top-0 left-0`}>
                 <Banner scrollY={scrollY} />
             </div>

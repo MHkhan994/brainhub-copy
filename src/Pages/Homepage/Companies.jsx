@@ -10,12 +10,12 @@ const Companies = () => {
 
     return (
         <div className="grid justify-center overflow-x-hidden">
-            <div className="min-h-screen flex flex-col justify-between companies w-[140vw] me-auto bg-dark z-40 text-white">
-                <div className="my-container pt-40">
+            <div className="min-h-screen md:min-h-[60vh] flex flex-col justify-between companies w-[140vw] me-auto bg-dark z-40 text-white">
+                <div className="my-container pt-24 md:pt-28 lg:pt-40">
                     <h1 className="text-center text-base">Brainhub is a software engineering agency trusted by 80+ US & European startups, scale-ups & enterprises.</h1>
-                    <div className='flex lg:w-10/12 mx-auto justify-between items-center flex-col lg:flex-row pt-6'>
+                    <div className='flex lg:w-10/12 w-full mx-auto justify-between items-center flex-col md:flex-row lg:flex-row pt-6'>
                         {
-                            companyImg.map(img => <img className='h-20 w-fit' key={img} src={img}></img>)
+                            companyImg.map(img => <img className='md:h-12 lg:h-20 h-16' key={img} src={img}></img>)
                         }
                     </div>
                 </div>
@@ -29,7 +29,7 @@ const Companies = () => {
 
             {/* ===============gradient overlay=========== */}
             <div>
-                <div className="h-[92vh] companies-overlay w-[140vw] absolute lg:-top-2 top-0 bg-white z-20">
+                <div className="h-[92vh] md:h-[55vh] companies-overlay w-[140vw] absolute lg:-top-2 top-0 bg-white z-20">
                 </div>
             </div>
         </div>
