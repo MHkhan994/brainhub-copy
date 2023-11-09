@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Navbar from "../Shared/Navbar";
 import Banner from "./Banner";
 import Companies from "./companies";
+import Projects from "./Projects";
 
 const Home = () => {
 
@@ -28,6 +29,7 @@ const Home = () => {
             <div className="z-40 relative mt-[110vh] w-full">
                 <Companies></Companies>
             </div>
+            <Projects></Projects>
         </div>
     );
 };

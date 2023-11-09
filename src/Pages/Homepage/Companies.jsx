@@ -29,7 +29,7 @@ const Companies = () => {
 
             {/* ===============gradient overlay=========== */}
             <div>
-                <div className="h-screen companies-overlay w-[140vw] absolute -top-3 bg-white z-20">
+                <div className="h-[92vh] companies-overlay w-[140vw] absolute lg:-top-2 top-0 bg-white z-20">
                 </div>
             </div>
         </div>
